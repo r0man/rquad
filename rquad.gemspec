@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{rquad}
-  s.version = "0.1.0"
+  s.version = "0.2.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Roman Scherer"]
@@ -17,14 +17,19 @@ Gem::Specification.new do |s|
      "README"
   ]
   s.files = [
-    "CHANGES",
+    ".gitignore",
+     "CHANGES",
      "LICENSE",
      "README",
+     "Rakefile",
      "VERSION",
-     "lib/quadtree.rb",
-     "lib/vector.rb",
-     "test/test_quadtree.rb",
-     "test/test_vector.rb"
+     "lib/rquad.rb",
+     "lib/rquad/quadtree.rb",
+     "lib/rquad/vector.rb",
+     "rquad.gemspec",
+     "test/helper.rb",
+     "test/rquad/test_quadtree.rb",
+     "test/rquad/test_vector.rb"
   ]
   s.homepage = %q{http://github.com/r0man/rquad}
   s.rdoc_options = ["--charset=UTF-8"]
@@ -32,9 +37,9 @@ Gem::Specification.new do |s|
   s.rubygems_version = %q{1.3.7}
   s.summary = %q{Ruby Quadtree Library}
   s.test_files = [
-    "test/helper.rb",
-     "test/test_quadtree.rb",
-     "test/test_vector.rb"
+    "test/rquad/test_quadtree.rb",
+     "test/rquad/test_vector.rb",
+     "test/helper.rb"
   ]
 
   if s.respond_to? :specification_version then
