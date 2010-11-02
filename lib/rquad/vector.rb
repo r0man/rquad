@@ -44,11 +44,11 @@ module RQuad
   class Vector
     # Initialize a Vector with either another Vector, an Array, or 2-3 numbers.
     def initialize(x = nil, y = nil, z = nil)
-      if x && x.class == Vector
+      if x && x.kind_of?(Vector)
         @x = x.x
         @y = x.y
         @z = x.z
-      elsif x && x.class == Array
+      elsif x && x.kind_of?(Array)
         @x = x[0]
         @y = x[1]
         @z = x[2]
