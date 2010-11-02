@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Roman Scherer"]
-  s.date = %q{2010-10-26}
+  s.date = %q{2010-11-02}
   s.description = %q{Ruby Quadtree Library}
   s.email = %q{roman.scherer@nugg.ad}
   s.extra_rdoc_files = [
